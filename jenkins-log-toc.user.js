@@ -25,7 +25,7 @@ function userscriptConsoleJumpTo(id){
     function getType(line) {
         const markers = {
             error: [
-                /ERROR|FAILED|FAILURE|exception/i
+                /\W(ERROR|FAILED|FAILURE|exception)\W/i
             ],
 
             warning: [
