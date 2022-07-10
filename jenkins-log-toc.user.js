@@ -25,14 +25,7 @@ function userscriptConsoleJumpTo(id){
     function getType(line) {
         const markers = {
             error: [
-                /\d Error/,
-                /FAILED/,
-                / error /i,
-                /^ERROR:/,
-                /^Failed/,
-                /[^0] failed/,
-                /FAILURE/,
-                /exception/i
+                /ERROR|FAILED|FAILURE|exception/i
             ],
 
             warning: [
